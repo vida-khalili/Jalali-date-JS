@@ -34,23 +34,74 @@ body {
   direction: rtl;
   font-family: "Vazirmatn UI FD", sans-serif;
   font-weight: 400;
+  padding-top: 80px;
 }
 .card {
-  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 20px;
-  max-width: 300px;
-  background: navy;
+  width: 320px;
+  background: white;
   font-weight: 700;
   font-size: 18px;
   height: auto;
   text-align: center;
   margin: 0 auto;
-  gap: 16px;
+  gap: 8px;
+  box-shadow: 0 0 10px gray;
+}
+
+.card-hedear {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 320px;
+  background-color: #cc3433;
+  border-radius: 20px 20px 0 0;
+  height: 90px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hanger-container {
+  z-index: 10;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-hanger {
+  display: block;
+  width: 15px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgb(69, 69, 69);
+  position: absolute;
+  top: -25px;
+}
+.punch {
+  background-color: white;
+  box-shadow: inset 1px 1px 3px #010101;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  border-radius: 50px;
 }
 .current-date {
   display: flex;
@@ -59,16 +110,27 @@ body {
 p {
   margin: 0;
 }
-#weekday {
-  font-size: 24px;
-}
-.convert-card {
-  border-radius: 20px;
 
+#month {
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+#year {
+  margin-top: 40px;
+}
+#weekday,
+#day {
+  font-size: 36px;
+}
+
+.convert-card {
+  margin-top: 16px;
+  border-radius: 20px;
   padding: 16px;
   display: grid;
   gap: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(159, 69, 69, 0.2);
 }
 
 input {
