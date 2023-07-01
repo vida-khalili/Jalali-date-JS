@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Vazirmatn UI FD;
+  src: url("./font/Vazirmatn-UI-FD-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn UI FD;
+  src: url("./font/Vazirmatn-UI-FD-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn UI FD;
+  src: url("./font/Vazirmatn-UI-FD-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn UI FD;
+  src: url("./font/Vazirmatn-UI-FD-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  direction: rtl;
+  font-family: "Vazirmatn UI FD", sans-serif;
+  font-weight: 400;
+}
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+  max-width: 300px;
+  background: navy;
+  font-weight: 700;
+  font-size: 18px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  gap: 16px;
+}
+.current-date {
+  display: flex;
+  gap: 8px;
+}
+p {
+  margin: 0;
+}
+#weekday {
+  font-size: 24px;
+}
+.convert-card {
+  border-radius: 20px;
+
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input {
+  padding: 8px;
+  border-radius: 8px;
+}
+.converted-date {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.convert-subtitle {
+  font-size: 14px;
+}
