@@ -146,3 +146,22 @@ input {
 .convert-subtitle {
   font-size: 14px;
 }
+
+.author {
+  margin-top: 12px;
+  font-size: 12px;
+  color: gray;
+  font-weight: 400;
+}
+.author a {
+  color: gray;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px solid gray;
+  font-weight: 600;
+  transition: border-bottom 100ms ease-in-out;
+}
+
+.author a:hover {
+  border-bottom: none;
+}
