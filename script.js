@@ -21,14 +21,10 @@ let months = new Array(
   "اسفند"
 );
 
-console.log(new Date().toLocaleString("fa-IR", options));
-
 let currentDate = new Date()
   .toLocaleString("fa-IR", options)
   .replace(",", "")
   .split(" ");
-
-console.log(currentDate);
 
 let weekday = currentDate[3];
 let day = currentDate[2];
@@ -42,7 +38,6 @@ document.getElementById("year").innerHTML = year;
 
 function getDate() {
   let inputDate = date_value.value.split("-");
-  console.log("input date: ", inputDate);
   let inputDay = inputDate[2];
   let inputMonth = inputDate[1];
   let inputYear = inputDate[0];
@@ -51,7 +46,6 @@ function getDate() {
     .locale("fa")
     .format("YYYY/M/D")
     .split("/");
-  console.log("persianDate: ", persianDate);
   let persianDay = persianDate[2];
   let persianMonth = months[persianDate[1]];
   let persianYear = persianDate[0];
